@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco World - Chocolate Factory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">🍫 Choco World</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart">Cart 🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Choco World</h1>
+            <p>Life is better with a little chocolate!</p>
+            <a href="#products" class="btn">Explore Products</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <h2>About Our Factory</h2>
+
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1548907040-4d42e3f4c6e4?w=800"
+                 alt="Delicious chocolate">
+
+            <div>
+                <h3>Our Sweet Story</h3>
+                <p>
+                    Welcome to Choco World! We are passionate about
+                    creating delicious and high-quality chocolates.
+                    Our chocolates are made using carefully selected
+                    cocoa beans and premium ingredients.
+                </p>
+                <p>
+                    Our mission is to bring happiness and sweetness
+                    to every customer through our delicious chocolates.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section" id="products">
+        <h2>Our Delicious Products</h2>
+        <p class="subtitle">Taste the happiness in every bite!</p>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1548907040-4d42e3f4c6e4?w=600"
+                     alt="Dark chocolate">
+                <h3>Dark Chocolate</h3>
+                <p>Rich and smooth cocoa taste.</p>
+                <h4>₹199</h4>
+                <button onclick="addToCart('Dark Chocolate',199)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?w=600"
+                     alt="Milk chocolate">
+                <h3>Milk Chocolate</h3>
+                <p>Soft and creamy chocolate.</p>
+                <h4>₹149</h4>
+                <button onclick="addToCart('Milk Chocolate',149)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600"
+                     alt="Chocolate truffles">
+                <h3>Chocolate Truffles</h3>
+                <p>Delicious chocolate treats.</p>
+                <h4>₹249</h4>
+                <button onclick="addToCart('Chocolate Truffles',249)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=600"
+                     alt="Chocolate gift box">
+                <h3>Chocolate Gift Box</h3>
+                <p>Perfect gift for your loved ones.</p>
+                <h4>₹399</h4>
+                <button onclick="addToCart('Chocolate Gift Box',399)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <h2>Our Chocolate Gallery</h2>
+
+        <div class="gallery-container">
+            <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=600" alt="Chocolate">
+            <img src="https://images.unsplash.com/photo-1548907040-4d42e3f4c6e4?w=600" alt="Chocolate">
+            <img src="https://images.unsplash.com/photo-1575377427642-087cf684f29d?w=600" alt="Chocolate">
+            <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=600" alt="Chocolate">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you!</p>
+
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Phone Number">
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart section" id="cart">
+        <h2>Shopping Cart 🛒</h2>
+
+        <div id="cart-items">
+            Your cart is empty.
+        </div>
+
+        <h3 id="total">Total: ₹0</h3>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Place Order
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🍫 Choco World</h3>
+        <p>Making every moment sweeter!</p>
+        <p>© 2026 Choco World. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
