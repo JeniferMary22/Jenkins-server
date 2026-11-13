@@ -7,7 +7,7 @@ pipeline {
         stage('Clone GitHub Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/vijayalakshmi778/jenkins-batch22.git'
+                    url: 'https://github.com/JeniferMary22/Jenkins-server.git'
             }
         }
 
